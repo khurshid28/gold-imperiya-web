@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  --color-gold-50: #FDF8E8;
+  --color-gold-100: #F9ECBE;
+  --color-gold-200: #F5DF94;
+  --color-gold-300: #FFD700;
+  --color-gold-400: #DAA520;
+  --color-gold-500: #B8860B;
+  --color-gold-600: #996515;
+  --color-gold-700: #7A5012;
+  --color-gold-800: #5C3D0E;
+  --color-gold-900: #3D280A;
+
+  --color-dark-bg: #0A0A0A;
+  --color-dark-card: #141414;
+  --color-dark-border: #1F1F1F;
+  --color-light-bg: #FAFAF8;
+  --color-light-card: #FFFFFF;
+  --color-light-border: #E8E4DC;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold-500);
+  border-radius: 4px;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+@keyframes pulse-gold {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(218, 165, 32, 0.4); }
+  50% { box-shadow: 0 0 20px 5px rgba(218, 165, 32, 0.2); }
+}
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.shimmer-text {
+  background: linear-gradient(90deg, var(--color-gold-400), var(--color-gold-300), var(--color-gold-100), var(--color-gold-300), var(--color-gold-400));
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s linear infinite;
+}
+.shimmer-border {
+  background: linear-gradient(90deg, var(--color-gold-600), var(--color-gold-300), var(--color-gold-600));
+  background-size: 200% auto;
+  animation: shimmer 3s linear infinite;
+}
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+.pulse-gold {
+  animation: pulse-gold 2s ease-in-out infinite;
+}
+.gradient-bg {
+  background: linear-gradient(-45deg, #0A0A0A, #1a1a0a, #0A0A0A, #141400);
+  background-size: 400% 400%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+/* Skeleton loading shimmer */
+@keyframes skeleton-shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+.shimmer-skeleton {
+  background: linear-gradient(90deg, transparent, rgba(218,165,32,0.08), transparent);
+  animation: skeleton-shimmer 1.5s ease-in-out infinite;
+}
+
+::selection {
+  background-color: rgba(218, 165, 32, 0.3);
+  color: inherit;
+}
+html {
+  scroll-behavior: auto;
+}
+body {
+  margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Premium typography */
+h1, h2, h3 {
+  letter-spacing: -0.02em;
+}
+p {
+  letter-spacing: 0.01em;
+}
+

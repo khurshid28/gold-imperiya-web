@@ -1,0 +1,106 @@
+{
+  "nav": {
+    "home": "Bosh sahifa",
+    "catalog": "Katalog",
+    "delivery": "Yetkazish",
+    "installment": "Nasiya",
+    "stores": "Filiallar",
+    "contact": "Aloqa"
+  },
+  "hero": {
+    "title": "Gold Imperiya",
+    "subtitle": "Oltin zargarlik buyumlari imperiyasi",
+    "description": "Eng sifatli oltin zargarlik buyumlari — uzuklar, zanjirlar, sirg'alar va bilaguzuklar. Maxsus chegirmalar va qulay narxlar!",
+    "cta": "Katalogni ko'rish",
+    "trusted": "Minglab mijozlar ishonchi"
+  },
+  "catalog": {
+    "title": "Bizning mahsulotlar",
+    "subtitle": "Har bir buyum — san'at asari",
+    "all": "Barchasi",
+    "rings": "Uzuklar",
+    "chains": "Zanjirlar",
+    "earrings": "Sirg'alar",
+    "bracelets": "Bilaguzuklar",
+    "weight": "Og'irligi",
+    "gram": "g",
+    "price": "Narxi",
+    "oldPrice": "Eski narx",
+    "discount": "Chegirma",
+    "order": "Buyurtma berish",
+    "currency": "so'm"
+  },
+  "nasiya": {
+    "title": "Nasiyaga sotib olish",
+    "subtitle": "Tez kunda ishga tushadi!",
+    "description": "Sevimli zargarlik buyumlaringizni qulay nasiya sharoitlarida xarid qiling. Biz sizga eng yaxshi sharoitlarni taklif qilamiz.",
+    "coming": "Yaqin kunlarda"
+  },
+  "delivery": {
+    "title": "Yetkazib berish xizmati",
+    "subtitle": "Tez va ishonchli yetkazib berish",
+    "step1": "Buyurtma bering",
+    "step1desc": "Katalogdan mahsulotni tanlang va buyurtma bering",
+    "step2": "Tasdiqlash",
+    "step2desc": "Operatorimiz siz bilan bog'lanadi va buyurtmani tasdiqlaydi",
+    "step3": "Yetkazish",
+    "step3desc": "Buyurtmangiz ishonchli qadoqda yetkaziladi",
+    "step4": "Qabul qilish",
+    "step4desc": "Mahsulotni tekshiring va xursand bo'ling!",
+    "free": "Bepul yetkazish",
+    "freeDesc": "500 000 so'mdan ortiq buyurtmalarga"
+  },
+  "stores": {
+    "title": "Bizning filiallar",
+    "subtitle": "Sizga eng yaqin filialni toping",
+    "workHours": "Ish vaqti",
+    "openMap": "Xaritada ko'rish",
+    "phone": "Telefon"
+  },
+  "brand": {
+    "title": "Bizning tarix",
+    "subtitle": "Oltin an'analar davomchisi",
+    "description": "Gold Imperiya 2015-yildan buyon O'zbekiston bozorida faoliyat yuritib, minglab oilalarga eng sifatli oltin zargarlik buyumlarini taqdim etib kelmoqda. Bizning har bir buyum — bu an'anaviy hunarmandchilik va zamonaviy dizaynning uyg'unligi.",
+    "craftsmanship": "Hunarmandchilik",
+    "craftsmanshipDesc": "Har bir buyum usta zargarlar tomonidan qo'lda ishlanadi",
+    "quality": "Sifat",
+    "qualityDesc": "Faqat 585° va 750° probali sof oltin ishlatamiz",
+    "heritage": "An'ana",
+    "heritageDesc": "10 yillik tajriba va oilaviy zargarlik an'analari"
+  },
+  "stats": {
+    "customers": "Mamnun mijozlar",
+    "experience": "Yillik tajriba",
+    "branches": "Filiallar",
+    "purity": "Oltin probasi"
+  },
+  "testimonials": {
+    "title": "Mijozlar fikri",
+    "subtitle": "Ishonch va mamnuniyat"
+  },
+  "trust": {
+    "hallmark": "585° sifat belgisi",
+    "hallmarkDesc": "Barcha buyumlar sertifikatlangan",
+    "genuine": "100% asl oltin",
+    "genuineDesc": "Sifat kafolatlanadi",
+    "guarantee": "Qaytarish kafolati",
+    "guaranteeDesc": "14 kun ichida qaytarish",
+    "packaging": "Premium qadoq",
+    "packagingDesc": "Bepul sovg'a qadoqlash"
+  },
+  "scrollTop": "Tepaga",
+  "footer": {
+    "rights": "Barcha huquqlar himoyalangan",
+    "description": "Gold Imperiya — Toshkentdagi eng ishonchli oltin zargarlik do'konlar tarmog'i",
+    "followUs": "Bizni kuzating",
+    "contactUs": "Bog'lanish"
+  },
+  "theme": {
+    "light": "Yorug'",
+    "dark": "Qorong'u"
+  },
+  "lang": {
+    "uz": "O'zbekcha",
+    "ru": "Русский"
+  }
+}
