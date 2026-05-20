@@ -74,7 +74,7 @@ const content: Record<Lang, {
     ],
     contact: {
       heading: '8. Contact Us',
-      body: 'If you have any questions about this Privacy Policy, please contact Gold Imperiya through the contact details published on our website.',
+      body: 'If you have any questions about this Privacy Policy, please contact us at alpdiametr@gmail.com.',
     },
     back: '\u2190 Back to home',
   },
@@ -139,7 +139,7 @@ const content: Record<Lang, {
     ],
     contact: {
       heading: '8. Biz bilan bog\u2018lanish',
-      body: 'Maxfiylik siyosati bo\u2018yicha savollaringiz bo\u2018lsa, saytimizda ko\u2018rsatilgan aloqa ma\u2019lumotlari orqali Gold Imperiya bilan bog\u2018laning.',
+      body: 'Maxfiylik siyosati bo\u2018yicha savollaringiz bo\u2018lsa, alpdiametr@gmail.com manziliga yozing.',
     },
     back: '\u2190 Bosh sahifaga qaytish',
   },
@@ -204,7 +204,7 @@ const content: Record<Lang, {
     ],
     contact: {
       heading: '8. Связаться с нами',
-      body: 'По любым вопросам, связанным с Политикой конфиденциальности, обращайтесь в Gold Imperiya по контактным данным, указанным на нашем сайте.',
+      body: 'По любым вопросам, связанным с Политикой конфиденциальности, пишите нам на alpdiametr@gmail.com.',
     },
     back: '\u2190 На главную',
   },
@@ -319,7 +319,23 @@ export default function PrivacyPolicy() {
             >
               {c.contact.heading}
             </h2>
-            <p className="leading-relaxed">{c.contact.body}</p>
+            <p className="leading-relaxed">
+              {c.contact.body.split('alpdiametr@gmail.com').map((part, i, arr) => (
+                <span key={i}>
+                  {part}
+                  {i < arr.length - 1 && (
+                    <a
+                      href="mailto:alpdiametr@gmail.com"
+                      className={`font-medium underline underline-offset-4 ${
+                        isDark ? 'text-gold-400 hover:text-gold-300' : 'text-yellow-700 hover:text-yellow-800'
+                      }`}
+                    >
+                      alpdiametr@gmail.com
+                    </a>
+                  )}
+                </span>
+              ))}
+            </p>
           </section>
         </div>
 
