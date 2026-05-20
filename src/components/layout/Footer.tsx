@@ -132,18 +132,16 @@ export default function Footer() {
             <p className={`text-xs ${theme === 'dark' ? 'text-gray-500' : 'text-gray-400'}`}>
               © 2026 Gold Imperiya. {t('footer.rights')}.
             </p>
-            <div className="flex items-center gap-1">
-              {[...Array(5)].map((_, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, scale: 0 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.1 }}
-                  className="w-1.5 h-1.5 rounded-full bg-gold-400"
-                />
-              ))}
-            </div>
+            <a
+              href="/privacy"
+              className={`text-xs underline-offset-4 hover:underline transition-colors ${
+                theme === 'dark'
+                  ? 'text-gold-400 hover:text-gold-300'
+                  : 'text-yellow-700 hover:text-yellow-600'
+              }`}
+            >
+              {t('footer.privacy')}
+            </a>
           </div>
         </AnimatedSection>
       </div>

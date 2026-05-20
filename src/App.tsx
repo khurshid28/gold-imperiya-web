@@ -1,8 +1,9 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import Lenis from 'lenis'
 import { ThemeProvider, useTheme } from './context/ThemeContext'
 import Header from './components/layout/Header'
 import Footer from './components/layout/Footer'
+import PrivacyPolicy from './components/pages/PrivacyPolicy'
 import Hero from './components/sections/Hero'
 import Catalog from './components/sections/Catalog'
 import NasiyaBanner from './components/sections/NasiyaBanner'
@@ -20,9 +21,25 @@ import FloatingContact from './components/ui/FloatingContact'
 
 function AppContent() {
   const { theme } = useTheme()
+  const [path, setPath] = useState<string>(() =>
+    typeof window !== 'undefined' ? window.location.pathname : '/'
+  )
 
-  // Lenis smooth scroll
+  // Listen for browser navigation (back/forward) so SPA routing keeps working
   useEffect(() => {
+    const onPop = () => setPath(window.location.pathname)
+    window.addEventListener('popstate', onPop)
+    return () => window.removeEventListener('popstate', onPop)
+  }, [])
+
+  const isPrivacy = (() => {
+    const p = path.replace(/\/+$/, '').toLowerCase()
+    return p === '/privacy' || p === '/privacy-policy'
+  })()
+
+  // Lenis smooth scroll (only on main landing page)
+  useEffect(() => {
+    if (isPrivacy) return
     const lenis = new Lenis({
       duration: 1.2,
       easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -45,7 +62,19 @@ function AppContent() {
     })
 
     return () => lenis.destroy()
-  }, [])
+  }, [isPrivacy])
+
+  if (isPrivacy) {
+    return (
+      <div className={`min-h-screen font-sans transition-colors duration-300 ${
+        theme === 'dark'
+          ? 'bg-dark-bg text-gray-200'
+          : 'bg-light-bg text-gray-800'
+      }`}>
+        <PrivacyPolicy />
+      </div>
+    )
+  }
 
   return (
     <div className={`min-h-screen font-sans transition-colors duration-300 ${
