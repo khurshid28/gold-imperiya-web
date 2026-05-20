@@ -17,24 +17,27 @@ const content: Record<Lang, {
     title: 'Privacy Policy',
     updated: 'Last updated: May 20, 2026',
     intro:
-      'Gold Imperiya ("we", "our", "us") respects your privacy. This Privacy Policy explains how we collect, use, disclose and safeguard your information when you visit our website or use our services.',
+      'Gold Imperiya ("we", "our", "us") respects your privacy. This Privacy Policy explains how we collect, use, disclose and safeguard your information when you visit our website (goldimperiya) or use our mobile application ("Gold Imperiya" on Google Play and the App Store).',
     sections: [
       {
         heading: '1. Information We Collect',
         body: [
-          'Personal information you voluntarily provide such as your full name, phone number, email address and delivery address when you place an order or contact us.',
-          'Technical information automatically collected when you visit the site, such as your IP address, browser type, operating system, referring URLs and pages viewed.',
-          'Cookies and similar tracking technologies used to remember your language preference, theme and improve site performance.',
+          'Website — personal information you voluntarily provide such as your full name, phone number, email address and delivery address when you place an order or contact us.',
+          'Website — technical information automatically collected when you visit the site, such as your IP address, browser type, operating system, referring URLs and pages viewed.',
+          'Website — cookies and similar tracking technologies used to remember your language preference, theme and improve site performance.',
+          'Mobile app — the application is currently a product catalog and showcase. It does not transmit personal data to our servers. All preferences (language, theme, favorites, recently viewed items) are stored only on your device using local storage.',
+          'Mobile app permissions — the app may request the following device permissions strictly for in-app functionality, and the resulting data never leaves your device: Camera and Photos (to let you upload an avatar or product image), Biometric / Fingerprint (to lock the app locally), Notifications (to show local reminders such as upcoming installment due dates), Phone state (to pause audio/video during incoming calls), and Internet (only to load public product images from our CDN).',
         ],
       },
       {
         heading: '2. How We Use Your Information',
         body: [
-          'To process and deliver your orders, including installment ("Nasiya") agreements.',
+          'To process and deliver your orders placed through the website, including installment ("Nasiya") agreements arranged offline with our stores.',
           'To respond to your inquiries and provide customer support.',
-          'To improve our website, products and customer experience.',
+          'To improve our website, mobile application, products and customer experience.',
           'To send service notifications related to your purchases (we do not send promotional spam).',
           'To comply with legal obligations of the Republic of Uzbekistan.',
+          'Mobile app data (preferences, favorites, cached images) is used only on your device to provide app functionality and is not analyzed, profiled or sold.',
         ],
       },
       {
@@ -82,24 +85,27 @@ const content: Record<Lang, {
     title: 'Maxfiylik siyosati',
     updated: 'Oxirgi yangilanish: 2026-yil 20-may',
     intro:
-      'Gold Imperiya ("biz", "bizning") sizning maxfiyligingizni hurmat qiladi. Ushbu Maxfiylik siyosati saytimizdan foydalanganingizda yoki xizmatlarimizga murojaat qilganingizda ma\u2019lumotlaringizni qanday yig\u2018ishimiz, ishlatishimiz va himoya qilishimizni tushuntiradi.',
+      'Gold Imperiya ("biz", "bizning") sizning maxfiyligingizni hurmat qiladi. Ushbu Maxfiylik siyosati saytimizdan (goldimperiya) hamda mobil ilovamizdan ("Gold Imperiya" — Google Play va App Store da) foydalanganingizda ma’lumotlaringizni qanday yig‘ishimiz, ishlatishimiz va himoya qilishimizni tushuntiradi.',
     sections: [
       {
-        heading: '1. Yig\u2018iladigan ma\u2019lumotlar',
+        heading: '1. Yig‘iladigan ma’lumotlar',
         body: [
-          'Buyurtma berganingizda yoki biz bilan bog\u2018langaningizda ko\u2018ngilli ravishda taqdim etadigan shaxsiy ma\u2019lumotlar: ism-familiya, telefon raqami, elektron pochta va yetkazib berish manzili.',
-          'Saytga tashrif buyurganingizda avtomatik to\u2018planadigan texnik ma\u2019lumotlar: IP-manzil, brauzer turi, operatsion tizim, ko\u2018rilgan sahifalar.',
-          'Til va mavzu tanlovingizni eslab qolish hamda sayt ishlashini yaxshilash uchun ishlatiladigan cookie fayllari.',
+          'Sayt — buyurtma berganingizda yoki biz bilan bog‘langaningizda ko‘ngilli ravishda taqdim etadigan shaxsiy ma’lumotlar: ism-familiya, telefon raqami, elektron pochta va yetkazib berish manzili.',
+          'Sayt — tashrif buyurganingizda avtomatik to‘planadigan texnik ma’lumotlar: IP-manzil, brauzer turi, operatsion tizim, ko‘rilgan sahifalar.',
+          'Sayt — til va mavzu tanlovingizni eslab qolish hamda sayt ishlashini yaxshilash uchun ishlatiladigan cookie fayllari.',
+          'Mobil ilova — hozircha faqat mahsulotlar katalogi va ko‘rgazma sifatida ishlaydi. Shaxsiy ma’lumotlaringiz bizning serverlarimizga yuborilmaydi. Til, mavzu, sevimlilar va so‘nggi ko‘rilgan mahsulotlar kabi sozlamalar faqat qurilmangizning ichki xotirasida saqlanadi.',
+          'Mobil ilova ruxsatlari — ilova faqat ichki funksiyalar uchun quyidagi ruxsatlarni so‘rashi mumkin va olingan ma’lumotlar qurilmangizdan tashqariga chiqarilmaydi: Kamera va Galereya (profil yoki mahsulot rasmini yuklash uchun), Barmoq izi / Biometrika (ilovani mahalliy himoyalash uchun), Bildirishnomalar (nasiya muddati kabi mahalliy eslatmalar uchun), Telefon holati (qo‘ng‘iroq vaqtida audio/videoni pauza qilish uchun), Internet (faqat ochiq mahsulot rasmlarini yuklash uchun).',
         ],
       },
       {
         heading: '2. Ma\u2019lumotlardan foydalanish',
         body: [
-          'Buyurtmalaringizni qabul qilish va yetkazib berish, jumladan nasiya shartnomalarini rasmiylashtirish uchun.',
-          'Murojaatlaringizga javob berish va mijozlarni qo\u2018llab-quvvatlash xizmatini taqdim etish uchun.',
-          'Saytimiz, mahsulotlarimiz va mijoz tajribasini yaxshilash uchun.',
+          'Sayt orqali topshirilgan buyurtmalaringizni qabul qilish va yetkazib berish, jumladan do‘konlarimiz bilan oflayn rasmiylashtiriladigan nasiya shartnomalari uchun.',
+          'Murojaatlaringizga javob berish va mijozlarni qo‘llab-quvvatlash xizmatini taqdim etish uchun.',
+          'Saytimiz, mobil ilovamiz, mahsulotlarimiz va mijoz tajribasini yaxshilash uchun.',
           'Xaridingizga oid xizmat bildirishnomalarini yuborish uchun (reklama spamlari yuborilmaydi).',
-          'O\u2018zbekiston Respublikasi qonunchiligi talablarini bajarish uchun.',
+          'O‘zbekiston Respublikasi qonunchiligi talablarini bajarish uchun.',
+          'Mobil ilovadagi ma’lumotlar (sozlamalar, sevimlilar, keshlangan rasmlar) faqat qurilmangizda, ilovaning ichki ishlashi uchun ishlatiladi — tahlil qilinmaydi, profillanmaydi va sotilmaydi.',
         ],
       },
       {
@@ -147,24 +153,27 @@ const content: Record<Lang, {
     title: 'Политика конфиденциальности',
     updated: 'Последнее обновление: 20 мая 2026 г.',
     intro:
-      'Gold Imperiya («мы», «наш») уважает вашу конфиденциальность. Настоящая Политика конфиденциальности объясняет, как мы собираем, используем, раскрываем и защищаем вашу информацию при посещении сайта и использовании наших услуг.',
+      'Gold Imperiya («мы», «наш») уважает вашу конфиденциальность. Настоящая Политика конфиденциальности объясняет, как мы собираем, используем, раскрываем и защищаем вашу информацию при посещении нашего сайта (goldimperiya) и использовании нашего мобильного приложения («Gold Imperiya» в Google Play и App Store).',
     sections: [
       {
         heading: '1. Какие данные мы собираем',
         body: [
-          'Личная информация, которую вы предоставляете добровольно: ФИО, номер телефона, адрес электронной почты и адрес доставки при оформлении заказа или обращении к нам.',
-          'Технические данные, собираемые автоматически: IP-адрес, тип браузера, операционная система, источники переходов и просмотренные страницы.',
-          'Файлы cookie и аналогичные технологии для запоминания выбранного языка, темы и улучшения работы сайта.',
+          'Сайт — личная информация, которую вы предоставляете добровольно: ФИО, номер телефона, адрес электронной почты и адрес доставки при оформлении заказа или обращении к нам.',
+          'Сайт — технические данные, собираемые автоматически: IP-адрес, тип браузера, операционная система, источники переходов и просмотренные страницы.',
+          'Сайт — файлы cookie и аналогичные технологии для запоминания выбранного языка, темы и улучшения работы сайта.',
+          'Мобильное приложение — на данный момент работает как каталог и витрина товаров. Персональные данные на наши серверы не передаются. Все настройки (язык, тема, избранное, недавно просмотренные товары) хранятся только на вашем устройстве в локальном хранилище.',
+          'Разрешения мобильного приложения — приложение может запрашивать следующие разрешения исключительно для внутренних функций, и полученные данные не покидают ваше устройство: Камера и Галерея (для загрузки аватара или изображения товара), Биометрия / Отпечаток пальца (для локальной блокировки приложения), Уведомления (для локальных напоминаний, например о сроках рассрочки), Состояние телефона (чтобы ставить аудио/видео на паузу во время входящего звонка), Интернет (только для загрузки публичных изображений товаров).',
         ],
       },
       {
         heading: '2. Как мы используем данные',
         body: [
-          'Для оформления и доставки заказов, включая договоры рассрочки («Насия»).',
+          'Для оформления и доставки заказов через сайт, включая договоры рассрочки («Насия»), оформляемые офлайн в наших магазинах.',
           'Для ответа на ваши запросы и поддержки клиентов.',
-          'Для улучшения сайта, ассортимента и качества обслуживания.',
+          'Для улучшения сайта, мобильного приложения, ассортимента и качества обслуживания.',
           'Для отправки сервисных уведомлений по вашим покупкам (рекламный спам мы не рассылаем).',
           'Для выполнения требований законодательства Республики Узбекистан.',
+          'Данные мобильного приложения (настройки, избранное, кэш изображений) используются только на вашем устройстве для работы приложения — не анализируются, не профилируются и не продаются.',
         ],
       },
       {
